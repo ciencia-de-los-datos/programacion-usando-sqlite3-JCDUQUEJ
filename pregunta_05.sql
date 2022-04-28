@@ -33,7 +33,7 @@
 --  o igual a 600
 -- 
 -- Rta/
---    K0   c01  c02    c03  c04
+--    K0   c01  C    c03  c04
 --  0  B  7000  100  OLPKN  0.2
 --  1  C  1000  600  LMMML  0.2
 --  2  D  4000  600  PJLJL  0.4
@@ -41,3 +41,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
+SELECT * FROM tbl0 WHERE c02 = 100 OR c02 = 600
