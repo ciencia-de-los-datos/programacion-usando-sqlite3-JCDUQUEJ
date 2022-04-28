@@ -44,26 +44,17 @@
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
 SELECT
-    d.K0,
-    avg(t.prueba)
+    K0,
+    avg(c21)
 FROM
-    tbl1 d
-JOIN (
-    SELECT
-        K1,
-        AVG(c21)prueba
-    FROM
-        tbl2
-    GROUP BY
-        K1
-    ) t
-ON
-    (d.K1 = t.K1)
+    tbl1
+JOIN 
+    tbl2
+    ON
+        (tbl1.K1 = tbl2.K1)
 WHERE
-    d.c13 > 400
+    c13 > 400
 GROUP BY
-    d.K0
-ORDER BY
-    d.K0 ASC
+    K0
 
 
